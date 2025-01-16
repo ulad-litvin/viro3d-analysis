@@ -1,0 +1,31 @@
+# virosphere-fold-v1_predicted_dataset.csv
+
+Metadata file for 85,162 protein records predicted with ColabFold and ESMFold.
+It contain information on protein annotation, virus taxonomy, host, quality of the ColabFold and ESMFold predictions.
+
+- `record_id`: a unique identifier for each peptide sequence consisting of its `protein_id` / `mat_pept_id` / `reg_id` and the virus's unique Sort number separated by an underscore ('_'), e.g. `AAAAAA.1_1`
+- `uniprot_id`: corresponding UniProt Entries retried using UniProt ID mapping service 
+- `pept_cat`: the peptide category, i.e. protein, mature peptide, or region
+- `protlen`: the protein length
+- `genbank_name`: name constructed from `gene`, `product` and `note` fields extracted from NCBI
+- `protein_id`: the protein NCBI identifier, including its version (separated by '.'), e.g. `AAAAAA.1`
+- `mat_pept_id`: this is the protein NCBI ID of the entry that this mature peptide was derived from followed by a '.' and a number unique to this mature peptide in the protein entry, e.g. `AAAAAA.1.1`
+- `reg_id`: this is the protein NCBI ID of the entry that this region was derived from followed by a '.1.' and a number unique to this region in the protein entry, e.g. `AAAAAA.1.1.1`
+- `uniq_id`: the `protein_id` / `mat_pept_id` / `reg_id` depending on what peptide category the entry falls under
+- `uniprot_match_status`: `match_protein_seq` if record's protein_seq matches uniprot sequence, `protein_substring` if record's protein_seq matches part of uniprot sequence, `match_structure_seq` if record's structure_seq matches uniprot sequence, `structure_substring` if record's structure_seq matches part of uniprot sequence, `no_match` if neither record's protein_seq nor structure_seq match entire uniprot sequence or its substring
+- `nt_acc`: the nucleotide (genome or segment) NCBI ID that the peptide was derived from (including its version), e.g. `AAAAAA.1`
+- `acc`: the nucleotide (genome or segment) NCBI ID that the peptide was derived from (without its version), e.g. `AAAAAA`
+- `seg`: the segment annotation if the protein was derived from a segmented virus
+- `taxid`: NCBI taxid based on `acc` column
+- `Sort`: the ICTV metadata unique number for each virus entry
+- `host`: the host annotation if that was available in the NCBI genome entry
+- `genome_coordinates`: the coordinates NCBI annotation mapping to the genome/segment (former `genomic_coordinates`)
+- `protein_coordinates`: the coordinates NCBI annotation mapping to the protein if the entry is a mature peptide or region
+- `esmfold_log_pLDDT`: pLDDT score of ESMFold prediciton from log files
+- `esmfold_log_pTM`: pTM score of ESMFold prediction from log files
+- `colabfold_json_pLDDT`: pLDDT score of ColabFold prediction from JSON files
+- `colabfold_json_pTM`: pTM score of ColabFold prediction from JSON files
+- `PC1`,`PC2`,`PC3`: X, Y, Z coordinates for virus species (PCA on Foldseek ALL vs ALL results)
+- `protein_seq`: the amino acid sequence for this peptide (former `translation`)
+- `structure_seq`: the amino acid sequences used for protein structure prediction (non-canonical AA characters were replaced by ColabFold) (former `corrected_translation`)
+- all other columns are derived from the [ICTV virus metadata resource](msl38v2/VMR_MSL38_v2.xlsx) and should be self-explanatory
