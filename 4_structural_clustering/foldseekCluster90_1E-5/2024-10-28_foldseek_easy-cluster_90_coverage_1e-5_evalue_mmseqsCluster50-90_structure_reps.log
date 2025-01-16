@@ -1,0 +1,565 @@
+./foldseek_clusters/foldseekCluster90_1E-5 exists and will be overwritten
+Create directory ./foldseek_clusters/foldseekCluster90_1E-5/tmp
+easy-cluster ./mmseqs2_clusters/mmseqsCluster50-90/structure_reps ./foldseek_clusters/foldseekCluster90_1E-5 ./foldseek_clusters/foldseekCluster90_1E-5/tmp --min-seq-id 0 --cov-mode 0 -c 0.9 -e 0.00001 --threads 8 
+
+MMseqs Version:                     	9.427df8a
+Substitution matrix                 	aa:3di.out,nucl:3di.out
+Seed substitution matrix            	aa:3di.out,nucl:3di.out
+Sensitivity                         	4
+k-mer length                        	0
+Target search mode                  	0
+k-score                             	seq:2147483647,prof:2147483647
+Max sequence length                 	65535
+Max results per query               	300
+Split database                      	0
+Split mode                          	2
+Split memory limit                  	0
+Coverage threshold                  	0.9
+Coverage mode                       	0
+Compositional bias                  	1
+Compositional bias                  	1
+Diagonal scoring                    	true
+Exact k-mer matching                	0
+Mask residues                       	1
+Mask residues probability           	0.9
+Mask lower case residues            	1
+Minimum diagonal score              	30
+Selected taxa                       	
+Spaced k-mers                       	1
+Preload mode                        	0
+Spaced k-mer pattern                	
+Local temporary path                	
+Threads                             	8
+Compressed                          	0
+Verbosity                           	3
+TMscore threshold                   	0
+LDDT threshold                      	0
+Sort by structure bit score         	1
+Alignment type                      	2
+Exact TMscore                       	0
+Add backtrace                       	false
+Alignment mode                      	0
+Alignment mode                      	0
+E-value threshold                   	1e-05
+Seq. id. threshold                  	0
+Min alignment length                	0
+Seq. id. mode                       	0
+Alternative alignments              	0
+Max reject                          	2147483647
+Max accept                          	2147483647
+Gap open cost                       	aa:10,nucl:10
+Gap extension cost                  	aa:1,nucl:1
+TMalign hit order                   	0
+TMalign fast                        	1
+Cluster mode                        	0
+Max connected component depth       	1000
+Similarity type                     	2
+Weight file name                    	
+Cluster Weight threshold            	0.9
+Single step clustering              	false
+Cascaded clustering steps           	3
+Cluster reassign                    	false
+Remove temporary files              	true
+Force restart with latest tmp       	false
+MPI runner                          	
+k-mers per sequence                 	21
+Scale k-mers per sequence           	aa:0.000,nucl:0.200
+Adjust k-mer length                 	false
+Shift hash                          	67
+Include only extendable             	false
+Skip repeating k-mers               	false
+Rescore mode                        	0
+Remove hits by seq. id. and coverage	false
+Sort results                        	0
+Path to ProstT5                     	
+Chain name mode                     	0
+Write mapping file                  	0
+Mask b-factor threshold             	0
+Coord store mode                    	2
+Write lookup file                   	1
+Input format                        	0
+File Inclusion Regex                	.*
+File Exclusion Regex                	^$
+
+createdb ./mmseqs2_clusters/mmseqsCluster50-90/structure_reps ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input --chain-name-mode 0 --write-mapping 0 --mask-bfactor-threshold 0 --coord-store-mode 2 --write-lookup 1 --input-format 0 --file-include '.*' --file-exclude '^$' --threads 8 -v 3 
+
+Output file: ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input
+[=================================================================] 33.15K 1m 45s 775ms
+Time for merging to input_ss: 0h 0m 0s 44ms
+Time for merging to input_h: 0h 0m 0s 9ms
+Time for merging to input_ca: 0h 0m 0s 78ms
+Time for merging to input: 0h 0m 0s 20ms
+Ignore 0 out of 33151.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 1m 46s 420ms
+Create directory ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp
+cluster ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp -c 0.9 --cov-mode 0 --threads 8 -e 1e-05 --min-seq-id 0 --remove-tmp-files 1 
+
+Set cluster sensitivity to -s 8.000000
+Set cluster mode SET COVER
+Set cluster iterations to 3
+kmermatcher ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref --sub-mat 'aa:3di.out,nucl:3di.out' --alph-size aa:21,nucl:5 --min-seq-id 0 --kmer-per-seq 300 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 0 --mask-prob 0.9 --mask-lower-case 1 --cov-mode 0 -k 0 -c 0.9 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 8 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+kmermatcher ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref --sub-mat 'aa:3di.out,nucl:3di.out' --alph-size aa:21,nucl:5 --min-seq-id 0 --kmer-per-seq 300 --spaced-kmer-mode 1 --kmer-per-seq-scale aa:0.000,nucl:0.200 --adjust-kmer-len 0 --mask 0 --mask-prob 0.9 --mask-lower-case 1 --cov-mode 0 -k 0 -c 0.9 --max-seq-len 65535 --hash-shift 67 --split-memory-limit 0 --include-only-extendable 0 --ignore-multi-kmer 0 --threads 8 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Database size: 33151 type: Aminoacid
+Reduced amino acid alphabet: (A F) (C V) (D B) (E Z) (G H) (I M T) (K W) (L J) (N R S) (P) (Q) (Y) (X) 
+
+Generate k-mers list for 1 split
+[=================================================================] 33.15K 0s 61ms
+Sort kmer 0h 0m 0s 156ms
+Sort by rep. sequence 0h 0m 0s 17ms
+Time for fill: 0h 0m 0s 15ms
+Time for merging to pref: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 397ms
+structurerescorediagonal ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_rescore1 --exact-tmscore 0 --tmscore-threshold 0 --lddt-threshold 0 --alignment-type 2 --sub-mat 'aa:3di.out,nucl:3di.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 1e-05 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.9 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 8 --compressed 0 -v 3 
+
+[=================================================================] 33.15K 0s 537ms
+Time for merging to pref_rescore1: 0h 0m 0s 7ms
+Time for processing: 0h 0m 0s 566ms
+clust ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_rescore1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pre_clust --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 8 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Clustering mode: Set Cover
+[=================================================================] 33.15K 0s 3ms
+Sort entries
+Find missing connections
+Found 4852 new connections.
+Reconstruct initial order
+[=================================================================] 33.15K 0s 3ms
+Add missing connections
+[=================================================================] 33.15K 0s 0ms
+
+Time for read in: 0h 0m 0s 11ms
+Total time: 0h 0m 0s 13ms
+
+Size of the sequence database: 33151
+Size of the alignment database: 33151
+Number of clusters: 30328
+
+Writing results 0h 0m 0s 4ms
+Time for merging to pre_clust: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 27ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/order_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_filter1 -v 3 --subdb-mode 1 
+
+Time for merging to pref_filter1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 11ms
+filterdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_filter1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_filter2 --filter-file ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/order_redundancy --threads 8 --compressed 0 -v 3 
+
+Filtering using file(s)
+[=================================================================] 30.33K 0s 9ms
+Time for merging to pref_filter2: 0h 0m 0s 6ms
+Time for processing: 0h 0m 0s 31ms
+structurealign ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_filter2 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln.linclust --tmscore-threshold 0 --lddt-threshold 0 --sort-by-structure-bits 0 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 1e-05 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.9 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 8 --compressed 0 -v 3 
+
+[=================================================================] 30.33K 5s 210ms
+Time for merging to aln.linclust: 0h 0m 0s 8ms
+Time for processing: 0h 0m 5s 238ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/order_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pre_clustered_seqs -v 3 --subdb-mode 1 
+
+Time for merging to pre_clustered_seqs: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 10ms
+clust ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pre_clustered_seqs ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln.linclust ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clust.linclust --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 8 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Clustering mode: Set Cover
+[=================================================================] 30.33K 0s 4ms
+Sort entries
+Find missing connections
+Found 29139 new connections.
+Reconstruct initial order
+[=================================================================] 30.33K 0s 3ms
+Add missing connections
+[=================================================================] 30.33K 0s 1ms
+
+Time for read in: 0h 0m 0s 12ms
+Total time: 0h 0m 0s 16ms
+
+Size of the sequence database: 30328
+Size of the alignment database: 30328
+Number of clusters: 22391
+
+Writing results 0h 0m 0s 3ms
+Time for merging to clust.linclust: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 28ms
+mergeclusters ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pre_clust ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clust.linclust --threads 8 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 30.33K 0s 4ms
+Clustering step 2
+[=================================================================] 22.39K 0s 9ms
+Write merged clustering
+[=================================================================] 33.15K 0s 13ms
+Time for merging to clu_redundancy: 0h 0m 0s 5ms
+Time for processing: 0h 0m 0s 25ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_ss -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy_ss: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 5ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input_ca ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_ca -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy_ca: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 5ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy -v 3 --subdb-mode 1 
+
+Time for merging to input_step_redundancy: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 8ms
+prefilter ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step0 --sub-mat 'aa:3di.out,nucl:3di.out' --seed-sub-mat 'aa:3di.out,nucl:3di.out' -s 1 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 100 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.9 --cov-mode 0 --comp-bias-corr 0 --comp-bias-corr-scale 1 --diag-score 0 --exact-kmer-matching 0 --mask 0 --mask-prob 0.9 --mask-lower-case 1 --min-ungapped-score 0 --add-self-matches 1 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 8 --compressed 0 -v 3 
+
+Query database size: 22391 type: Aminoacid
+Estimated memory consumption: 1023M
+Target database size: 22391 type: Aminoacid
+Index table k-mer threshold: 154 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 22.39K 0s 18ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 22.39K 0s 24ms
+Index statistics
+Entries:          352852
+DB size:          490 MB
+Avg k-mer size:   0.005513
+Top 10 k-mers
+    IWWWDP	135
+    TWWWDP	107
+    KKWWDP	96
+    KWWWDP	93
+    IWWAVR	82
+    KKKFPV	75
+    IWDPIW	65
+    KIITPV	61
+    KKKKDP	60
+    KKKWDP	60
+Time for index table init: 0h 0m 0s 949ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 154
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 22391
+Target db start 1 to 22391
+[=================================================================] 22.39K 0s 106ms
+
+1.636690 k-mers per position
+662 DB matches per sequence
+0 overflows
+15 sequences passed prefiltering per query sequence
+1 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step0: 0h 0m 0s 5ms
+Time for processing: 0h 0m 1s 542ms
+structurealign ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step0 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step0 --tmscore-threshold 0 --lddt-threshold 0 --sort-by-structure-bits 0 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 1e-05 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.9 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 8 --compressed 0 -v 3 
+
+[=================================================================] 22.39K 1s 350ms
+Time for merging to aln_step0: 0h 0m 0s 5ms
+Time for processing: 0h 0m 1s 371ms
+clust ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step0 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step0 --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 8 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Clustering mode: Set Cover
+[=================================================================] 22.39K 0s 1ms
+Sort entries
+Find missing connections
+Found 431 new connections.
+Reconstruct initial order
+[=================================================================] 22.39K 0s 1ms
+Add missing connections
+[=================================================================] 22.39K 0s 0ms
+
+Time for read in: 0h 0m 0s 6ms
+Total time: 0h 0m 0s 8ms
+
+Size of the sequence database: 22391
+Size of the alignment database: 22391
+Number of clusters: 21259
+
+Writing results 0h 0m 0s 3ms
+Time for merging to clu_step0: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 17ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step0 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1_ss -v 3 --subdb-mode 1 
+
+Time for merging to input_step1_ss: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 4ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step0 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_ca ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1_ca -v 3 --subdb-mode 1 
+
+Time for merging to input_step1_ca: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 5ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step0 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1 -v 3 --subdb-mode 1 
+
+Time for merging to input_step1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 8ms
+prefilter ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step1 --sub-mat 'aa:3di.out,nucl:3di.out' --seed-sub-mat 'aa:3di.out,nucl:3di.out' -s 4.5 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 200 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.9 --cov-mode 0 --comp-bias-corr 1 --comp-bias-corr-scale 0.15 --diag-score 1 --exact-kmer-matching 0 --mask 0 --mask-prob 0.9 --mask-lower-case 1 --min-ungapped-score 30 --add-self-matches 1 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 8 --compressed 0 -v 3 
+
+Query database size: 21259 type: Aminoacid
+Estimated memory consumption: 1020M
+Target database size: 21259 type: Aminoacid
+Index table k-mer threshold: 123 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 21.26K 0s 29ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 21.26K 0s 47ms
+Index statistics
+Entries:          1242032
+DB size:          495 MB
+Avg k-mer size:   0.019407
+Top 10 k-mers
+    VSVSSN	875
+    LLLLLV	660
+    SLSLLV	564
+    SSVNSV	477
+    SSSSSV	443
+    WDDDDT	311
+    VSLSSS	295
+    LSLSVS	292
+    SSSNSV	290
+    LSLSSV	273
+Time for index table init: 0h 0m 1s 15ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 123
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 21259
+Target db start 1 to 21259
+[=================================================================] 21.26K 0s 959ms
+
+19.177854 k-mers per position
+3464 DB matches per sequence
+0 overflows
+71 sequences passed prefiltering per query sequence
+9 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step1: 0h 0m 0s 5ms
+Time for processing: 0h 0m 2s 473ms
+structurealign ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step1 --tmscore-threshold 0 --lddt-threshold 0 --sort-by-structure-bits 0 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 1e-05 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.9 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 8 --compressed 0 -v 3 
+
+[=================================================================] 21.26K 1s 918ms
+Time for merging to aln_step1: 0h 0m 0s 5ms
+Time for processing: 0h 0m 1s 945ms
+clust ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step1 --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 8 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Clustering mode: Set Cover
+[=================================================================] 21.26K 0s 2ms
+Sort entries
+Find missing connections
+Found 200 new connections.
+Reconstruct initial order
+[=================================================================] 21.26K 0s 2ms
+Add missing connections
+[=================================================================] 21.26K 0s 0ms
+
+Time for read in: 0h 0m 0s 8ms
+Total time: 0h 0m 0s 10ms
+
+Size of the sequence database: 21259
+Size of the alignment database: 21259
+Number of clusters: 20069
+
+Writing results 0h 0m 0s 2ms
+Time for merging to clu_step1: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 20ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2_ss -v 3 --subdb-mode 1 
+
+Time for merging to input_step2_ss: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 4ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1_ca ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2_ca -v 3 --subdb-mode 1 
+
+Time for merging to input_step2_ca: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 4ms
+createsubdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2 -v 3 --subdb-mode 1 
+
+Time for merging to input_step2: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 4ms
+prefilter ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2_ss ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step2 --sub-mat 'aa:3di.out,nucl:3di.out' --seed-sub-mat 'aa:3di.out,nucl:3di.out' -s 8 -k 0 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 1000 --split 0 --split-mode 2 --split-memory-limit 0 -c 0.9 --cov-mode 0 --comp-bias-corr 1 --comp-bias-corr-scale 0.15 --diag-score 1 --exact-kmer-matching 0 --mask 0 --mask-prob 0.9 --mask-lower-case 1 --min-ungapped-score 30 --add-self-matches 1 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 8 --compressed 0 -v 3 
+
+Query database size: 20069 type: Aminoacid
+Estimated memory consumption: 1016M
+Target database size: 20069 type: Aminoacid
+Index table k-mer threshold: 91 at k-mer size 6 
+Index table: counting k-mers
+[=================================================================] 20.07K 0s 45ms
+Index table: Masked residues: 0
+Index table: fill
+[=================================================================] 20.07K 0s 99ms
+Index statistics
+Entries:          2856184
+DB size:          504 MB
+Avg k-mer size:   0.044628
+Top 10 k-mers
+    DDDDDD	8837
+    DDDDDP	7934
+    DDDDPP	7582
+    DDDDPD	6855
+    DDDPPP	6159
+    PPPPDD	5947
+    DDPPPP	5807
+    PPPPPP	5667
+    LVLVVV	4591
+    SVSVVV	4111
+Time for index table init: 0h 0m 1s 156ms
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 91
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 20069
+Target db start 1 to 20069
+[=================================================================] 20.07K 15s 125ms
+
+563.199454 k-mers per position
+65192 DB matches per sequence
+0 overflows
+648 sequences passed prefiltering per query sequence
+1000 median result list length
+0 sequences with 0 size result lists
+Time for merging to pref_step2: 0h 0m 0s 5ms
+Time for processing: 0h 0m 16s 849ms
+structurealign ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step2 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step2 --tmscore-threshold 0 --lddt-threshold 0 --sort-by-structure-bits 0 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 0 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 1e-05 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0.9 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 0 --comp-bias-corr-scale 1 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 8 --compressed 0 -v 3 
+
+[=================================================================] 20.07K 7s 697ms
+Time for merging to aln_step2: 0h 0m 0s 5ms
+Time for processing: 0h 0m 7s 748ms
+clust ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step2 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step2 --cluster-mode 0 --max-iterations 1000 --similarity-type 2 --threads 8 --compressed 0 -v 3 --cluster-weight-threshold 0.9 
+
+Clustering mode: Set Cover
+[=================================================================] 20.07K 0s 2ms
+Sort entries
+Find missing connections
+Found 260 new connections.
+Reconstruct initial order
+[=================================================================] 20.07K 0s 2ms
+Add missing connections
+[=================================================================] 20.07K 0s 0ms
+
+Time for read in: 0h 0m 0s 7ms
+Total time: 0h 0m 0s 9ms
+
+Size of the sequence database: 20069
+Size of the alignment database: 20069
+Number of clusters: 19067
+
+Writing results 0h 0m 0s 2ms
+Time for merging to clu_step2: 0h 0m 0s 0ms
+Time for processing: 0h 0m 0s 19ms
+mergeclusters ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_redundancy ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step0 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step1 ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step2 --threads 8 --compressed 0 -v 3 
+
+Clustering step 1
+[=================================================================] 22.39K 0s 4ms
+Clustering step 2
+[=================================================================] 21.26K 0s 10ms
+Clustering step 3
+[=================================================================] 20.07K 0s 17ms
+Clustering step 4
+[=================================================================] 19.07K 0s 22ms
+Write merged clustering
+[=================================================================] 33.15K 0s 26ms
+Time for merging to clu: 0h 0m 0s 4ms
+Time for processing: 0h 0m 0s 37ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_redundancy -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step0 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step1 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step1 -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step1 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_step2 -v 3 
+
+Time for processing: 0h 0m 0s 3ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln_step2 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clu_step2 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step1_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step2_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_filter1 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_rescore1 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pre_clust -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/input_step_redundancy_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pref_filter2 -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/aln.linclust -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/clust.linclust -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_tmp/10987066471271763781/pre_clustered_seqs -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+createtsv ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/cluster.tsv --threads 8 -v 3 
+
+Time for merging to cluster.tsv: 0h 0m 0s 5ms
+Time for processing: 0h 0m 0s 27ms
+result2repseq ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_rep --db-load-mode 0 --compressed 0 --threads 8 -v 3 
+
+[=================================================================] 19.07K 0s 6ms
+Time for merging to clu_rep: 0h 0m 0s 9ms
+Time for processing: 0h 0m 0s 25ms
+result2flat ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_rep ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/rep_seq.fasta --use-fasta-header -v 3 
+
+Time for processing: 0h 0m 0s 25ms
+createseqfiledb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_seqs --threads 8 -v 3 
+
+[=================================================================] 19.07K 0s 6ms
+Time for merging to clu_seqs: 0h 0m 0s 4ms
+Time for processing: 0h 0m 0s 31ms
+result2flat ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_seqs ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/all_seqs.fasta -v 3 
+
+Time for processing: 0h 0m 0s 57ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input -v 3 
+
+Time for processing: 0h 0m 0s 2ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/input_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_seqs -v 3 
+
+Time for processing: 0h 0m 0s 3ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu_rep -v 3 
+
+Time for processing: 0h 0m 0s 1ms
+rmdb ./foldseek_clusters/foldseekCluster90_1E-5/tmp/3666532848065956622/clu -v 3 
+
+Time for processing: 0h 0m 0s 0ms
