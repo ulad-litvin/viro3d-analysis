@@ -1,0 +1,51 @@
+record_id,Sort,Species,protlen,esmfold_log_pLDDT,colabfold_json_pLDDT,esm_colab_pLDDT_difference,genbank_name
+AVM87326.1.1.1_10228,10228,Nangarvirus 1,209,83.8,32.9,50.9,Conserved catalytic core domain of RNA-dependent RNA polymerase (RdRp) from the positive-sense single-stranded RNA [(+)ssRNA] viruses and closely related viruses; cl40470
+AKT26014.1_12145,12145,Equine mastadenovirus B,484,78.4,28.1,50.3,Product: hypothetical protein; Note: hORF1
+AAG02968.1_12039,12039,Amsacta moorei entomopoxvirus,205,81.3,31.5,49.8,Gene: AMV262
+AJL34131.1_11966,11966,African swine fever virus,233,82.7,33.6,49.1,Gene: BA71V-H233R (j6R); Note: similar to African swine fever virus E75 strain E75 of INSD accession FN557520
+CCV02462.1_11949,11949,Invertebrate iridescent virus 31,148,82.9,34.6,48.3,Gene: 090R; Product: hypothetical protein; Note: closest ortholog is CIV250L
+AJL34296.1_11967,11967,African swine fever virus,233,81.0,33.1,47.9,Gene: BA71V-H233R (j6R); Note: similar to African swine fever virus E75 strain E75 of INSD accession FN557520
+AID46521.1_11983,11983,Pigeonpox virus,200,80.5,33.6,46.9,Product: C-type lectin family protein
+AID46744.1_11983,11983,Pigeonpox virus,200,80.5,33.6,46.9,Product: C-type lectin-like protein
+AGT99275.1_123,123,Roseolovirus suidbeta2,289,79.9,33.2,46.7,Gene: U85; Product: putative protein U85
+AQS27932.1.1.3_10236,10236,Okavirus orientale,379,78.7,32.1,46.6,Conserved catalytic core domain of RNA-dependent RNA polymerase (RdRp) from the positive-sense single-stranded RNA [(+)ssRNA] viruses and closely related viruses; cl40470
+APG78856.1_8880,8880,Alphanemrhavirus xinzhou,539,74.3,27.8,46.5,Product: putative glycoprotein
+ACA21302.1.1.2_10235,10235,Okavirus flavicapitis,379,78.6,33.3,45.3,Catalytic core domain of RNA-dependent RNA polymerase (RdRp) in the family Roniviridae of positive-sense single-stranded RNA [(+)ssRNA] viruses; cd23190
+CCA61363.1_11896,11896,Toursvirus dptv1a,132,78.5,33.5,45.0,Note: unnamed protein product; 006R; Protein with an unknown function; closest orthologs: None so far identified (02/06/2011)
+CCA61414.1_11896,11896,Toursvirus dptv1a,100,89.6,44.7,44.89999999999999,"Note: unnamed protein product; 057R; metallo-hydrolase; closest orthologs: YP_441975.1: Gene info metallo-beta-lactamase family protein [Burkholderia thailandensis E264], HvAV3e ORF050 SfAV1a ORF Q+R, TnAV2c ORF033; paralog of DpAV4 056R"
+AHC02808.1_114,114,Proboscivirus elephantidbeta5,185,73.7,29.3,44.400000000000006,Gene: EE49D; Product: membrane protein EE49D
+AAN04394.1_12427,12427,Betanudivirus hezeae,298,73.9,29.5,44.400000000000006,Gene: orf100; Product: Orf100
+AEV80366.1_99,99,Cytomegalovirus cercopithecinebeta5,204,74.6,30.6,43.99999999999999,Gene: RL11F; Product: membrane protein RL11F
+AEZ68792.1_58,58,Scutavirus chelonidalpha5,270,80.5,36.6,43.9,Gene: F-M04; Product: F-M04 protein
+AAF82690.2.1.3_10234,10234,Okavirus branchiae,379,77.3,33.5,43.8,Catalytic core domain of RNA-dependent RNA polymerase (RdRp) in the family Roniviridae of positive-sense single-stranded RNA [(+)ssRNA] viruses; cd23190
+AXI68666.1_12255,12255,Polar bear mastadenovirus A,206,76.1,32.7,43.39999999999999,Product: E3 ORFA
+CCU55326.1_12038,12038,Adoxophyes honmai entomopoxvirus,183,79.5,36.4,43.1,Product: hypothetical protein
+AKR04268.1_12023,12023,Salmon gillpox virus,198,76.2,33.4,42.8,Product: hypothetical protein; Note: DUF830
+ABQ08807.1_12418,12418,Glossinavirus glopallidipedis,349,78.6,35.9,42.7,Product: hypothetical protein; Note: similar to ORF AMV 260 from Amsacta moorei entomopoxvirus
+ADD73739.1_12359,12359,Alphabaculovirus lyxylinae,253,72.3,29.6,42.7,Product: ORF30
+ANQ44728.1.1.1_11113,11113,Nylanderia fulva virus 1,112,85.6,42.9,42.7,OTU (ovarian tumor) domain family; cd22744
+ASK51357.1_12026,12026,Eptesipox virus,264,77.3,34.6,42.7,Product: hemagglutinin
+CBH29218.1.1_11958,11958,African swine fever virus,220,77.5,35.0,42.5,Unnamed
+AEW69590.1_12428,12428,Betanudivirus hezeae,298,74.8,32.9,41.9,Gene: orf41; Product: hypothetical protein
+AKR04178.1_12023,12023,Salmon gillpox virus,184,86.6,44.7,41.89999999999999,Product: hypothetical protein
+AAD09734.1_12136,12136,Bovine mastadenovirus B,284,72.4,30.8,41.60000000000001,Product: 284R
+AP_000038.1_12136,12136,Bovine mastadenovirus B,284,72.4,30.8,41.60000000000001,Product: E3 ORFA
+ANZ56956.1_11915,11915,Common midwife toad virus,205,73.7,32.4,41.3,Product: hypothetical protein
+ABG25775.1_33,33,Batravirus ranidallo1,264,70.2,29.2,41.0,Product: ORF19
+QOW03296.1.1.1_10233,10233,Nimanivirus lahi,381,75.5,34.8,40.7,Conserved catalytic core domain of RNA-dependent RNA polymerase (RdRp) from the positive-sense single-stranded RNA [(+)ssRNA] viruses and closely related viruses; cl40470
+APG78846.1_8879,8879,Alphanemrhavirus xingshan,512,67.8,27.2,40.6,Product: putative glycoprotein
+CCA61408.1_11896,11896,Toursvirus dptv1a,220,80.1,39.7,40.39999999999999,Note: unnamed protein product; 051L; Protein with an unknown function; closest orthologs: None so far identified (02/06/2011)
+APF32077.1_8895,8895,Caligrhavirus caligus,537,69.7,29.5,40.2,Gene: G; Product: glycoprotein
+AAR83673.1_11977,11977,Canarypox virus,171,73.3,33.1,40.2,Gene: CNPV327; Product: CNPV327 hypothetical protein; Note: identical to CNPV002
+AAP50539.1_101,101,Cytomegalovirus macacinebeta3,231,68.7,28.5,40.2,Product: rh12
+AAR83348.1_11977,11977,Canarypox virus,171,73.3,33.1,40.2,Gene: CNPV002; Product: CNPV002 hypothetical protein; Note: identical to CNPV327
+AAC82609.1_11743,11743,Walleye dermal sarcoma virus,297,86.7,46.6,40.1,Product: ORF-A
+BAK40080.1_8976,8976,Merhavirus tritaeniorhynchus,503,70.7,30.7,40.0,Gene: G; Product: glycoprotein
+CBH29218.1_11958,11958,African swine fever virus,233,83.2,43.4,39.8,Gene: BA71V-H233R (j6R)
+AJZ77125.1_11968,11968,African swine fever virus,233,83.2,43.4,39.8,Product: H233R
+AAA65347.1_11957,11957,African swine fever virus,233,83.2,43.4,39.8,Gene: H233R; Product: pH233R precursor
+CAN10218.1_11960,11960,African swine fever virus,233,83.2,43.4,39.8,Gene: H233R; Product: pH233R
+CAN10467.1_11963,11963,African swine fever virus,233,83.2,43.4,39.8,Gene: H233R; Product: pH233R
+AKO62799.1_11962,11962,African swine fever virus,233,83.2,43.4,39.8,Gene: H233R; Product: pH233R
+CAD2068480.1_11961,11961,African swine fever virus,233,83.2,43.4,39.8,Gene: H233R CDS
+AIY22309.1_11959,11959,African swine fever virus,233,83.2,43.4,39.8,Gene: H233R; Product: pH233R
