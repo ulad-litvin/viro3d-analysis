@@ -1,0 +1,165 @@
+easy-search ./colabfold_esmfold_best_relaxed_analysis ./foldseekDBs/NomburgDB/NomburgDB ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/foldseek_Viro3D_vs_NomburgDB.tsv ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp --format-mode 4 --format-output query,target,fident,alnlen,mismatch,gapopen,qstart,qend,qlen,qcov,tstart,tend,tlen,tcov,evalue,bits,prob,lddt,alntmscore --threads 8 
+
+MMseqs Version:              	9.427df8a
+Seq. id. threshold           	0
+Coverage threshold           	0
+Coverage mode                	0
+Max reject                   	2147483647
+Max accept                   	2147483647
+Add backtrace                	false
+TMscore threshold            	0
+TMalign hit order            	0
+TMalign fast                 	1
+Preload mode                 	0
+Threads                      	8
+Verbosity                    	3
+LDDT threshold               	0
+Sort by structure bit score  	1
+Alignment type               	2
+Exact TMscore                	0
+Substitution matrix          	aa:3di.out,nucl:3di.out
+Alignment mode               	3
+Alignment mode               	0
+E-value threshold            	10
+Min alignment length         	0
+Seq. id. mode                	0
+Alternative alignments       	0
+Max sequence length          	65535
+Compositional bias           	1
+Compositional bias           	1
+Gap open cost                	aa:10,nucl:10
+Gap extension cost           	aa:1,nucl:1
+Compressed                   	0
+Seed substitution matrix     	aa:3di.out,nucl:3di.out
+Sensitivity                  	9.5
+k-mer length                 	6
+Target search mode           	0
+k-score                      	seq:2147483647,prof:2147483647
+Max results per query        	1000
+Split database               	0
+Split mode                   	2
+Split memory limit           	0
+Diagonal scoring             	true
+Exact k-mer matching         	0
+Mask residues                	0
+Mask residues probability    	0.99995
+Mask lower case residues     	1
+Minimum diagonal score       	30
+Selected taxa                	
+Spaced k-mers                	1
+Spaced k-mer pattern         	
+Local temporary path         	
+Exhaustive search mode       	false
+Prefilter mode               	0
+Search iterations            	1
+Remove temporary files       	true
+MPI runner                   	
+Force restart with latest tmp	false
+Cluster search               	0
+Path to ProstT5              	
+Chain name mode              	0
+Write mapping file           	0
+Mask b-factor threshold      	0
+Coord store mode             	2
+Write lookup file            	1
+Input format                 	0
+File Inclusion Regex         	.*
+File Exclusion Regex         	^$
+Alignment format             	4
+Format alignment output      	query,target,fident,alnlen,mismatch,gapopen,qstart,qend,qlen,qcov,tstart,tend,tlen,tcov,evalue,bits,prob,lddt,alntmscore
+Database output              	false
+Greedy best hits             	false
+
+Alignment backtraces will be computed, since they were requested by output format.
+createdb ./colabfold_esmfold_best_relaxed_analysis ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query --chain-name-mode 0 --write-mapping 0 --mask-bfactor-threshold 0 --coord-store-mode 2 --write-lookup 1 --input-format 0 --file-include '.*' --file-exclude '^$' --threads 8 -v 3 
+
+Output file: ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query
+[=================================================================] 85.16K 40s 25ms
+Time for merging to query_ss: 0h 0m 0s 57ms
+Time for merging to query_h: 0h 0m 0s 24ms
+Time for merging to query_ca: 0h 0m 0s 227ms
+Time for merging to query: 0h 0m 0s 56ms
+Ignore 0 out of 85162.
+Too short: 0, incorrect: 0, not proteins: 0.
+Time for processing: 0h 0m 41s 473ms
+Create directory ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp
+search ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query ./foldseekDBs/NomburgDB/NomburgDB ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/result ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp -a 1 --threads 8 --alignment-mode 3 --comp-bias-corr 1 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 -s 9.5 -k 6 --mask 0 --mask-prob 0.99995 --remove-tmp-files 1 
+
+prefilter ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query_ss ./foldseekDBs/NomburgDB/NomburgDB_ss.idx ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp/7054322556215391234/pref --sub-mat 'aa:3di.out,nucl:3di.out' --seed-sub-mat 'aa:3di.out,nucl:3di.out' -s 9.5 -k 6 --target-search-mode 0 --k-score seq:2147483647,prof:2147483647 --alph-size aa:21,nucl:5 --max-seq-len 65535 --max-seqs 1000 --split 0 --split-mode 2 --split-memory-limit 0 -c 0 --cov-mode 0 --comp-bias-corr 1 --comp-bias-corr-scale 0.15 --diag-score 1 --exact-kmer-matching 0 --mask 0 --mask-prob 0.99995 --mask-lower-case 1 --min-ungapped-score 30 --add-self-matches 0 --spaced-kmer-mode 1 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --threads 8 --compressed 0 -v 3 
+
+Index version: fs1
+Generated by:  9.427df8a
+ScoreMatrix:  3di.out
+Query database size: 85162 type: Aminoacid
+Estimated memory consumption: 1G
+Target database size: 67715 type: Aminoacid
+Process prefiltering step 1 of 1
+
+k-mer similarity threshold: 78
+Starting prefiltering scores calculation (step 1 of 1)
+Query db start 1 to 85162
+Target db start 1 to 67715
+[=================================================================] 85.16K 24m 23s 229ms
+
+3480.004307 k-mers per position
+3388027 DB matches per sequence
+47423 overflows
+980 sequences passed prefiltering per query sequence
+1000 median result list length
+1072 sequences with 0 size result lists
+Time for merging to pref: 0h 0m 0s 24ms
+Time for processing: 0h 24m 24s 669ms
+structurealign ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query ./foldseekDBs/NomburgDB/NomburgDB.idx ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp/7054322556215391234/pref ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp/7054322556215391234/strualn --tmscore-threshold 0 --lddt-threshold 0 --sort-by-structure-bits 1 --alignment-type 2 --exact-tmscore 0 --sub-mat 'aa:3di.out,nucl:3di.out' -a 1 --alignment-mode 3 --alignment-output-mode 0 --wrapped-scoring 0 -e 10 --min-seq-id 0 --min-aln-len 0 --seq-id-mode 0 --alt-ali 0 -c 0 --cov-mode 0 --max-seq-len 65535 --comp-bias-corr 1 --comp-bias-corr-scale 0.5 --max-rejected 2147483647 --max-accept 2147483647 --add-self-matches 0 --db-load-mode 0 --pca substitution:1.100,context:1.400 --pcb substitution:4.100,context:5.800 --score-bias 0 --realign 0 --realign-score-bias -0.2 --realign-max-seqs 2147483647 --corr-score-weight 0 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --zdrop 40 --threads 8 --compressed 0 -v 3 
+
+Index version: fs1
+Generated by:  9.427df8a
+ScoreMatrix:  3di.out
+Index version: fs1
+Generated by:  9.427df8a
+ScoreMatrix:  3di.out
+Index version: fs1
+Generated by:  9.427df8a
+ScoreMatrix:  3di.out
+posix_madvise returned an error (touchMemory)
+[=================================================================] 85.16K 1h 2m 4s 632ms
+Time for merging to strualn: 0h 0m 0s 27ms
+Time for processing: 1h 2m 6s 53ms
+mvdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp/7054322556215391234/strualn ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp/7054322556215391234/aln 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp/7054322556215391234/aln ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/result -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+Removing temporary files
+rmdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/search_tmp/7054322556215391234/pref -v 3 
+
+Time for processing: 0h 0m 0s 315ms
+convertalis ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query ./foldseekDBs/NomburgDB/NomburgDB.idx ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/result ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/foldseek_Viro3D_vs_NomburgDB.tsv --sub-mat 'aa:3di.out,nucl:3di.out' --format-mode 4 --format-output query,target,fident,alnlen,mismatch,gapopen,qstart,qend,qlen,qcov,tstart,tend,tlen,tcov,evalue,bits,prob,lddt,alntmscore --translation-table 1 --gap-open aa:10,nucl:10 --gap-extend aa:1,nucl:1 --db-output 0 --db-load-mode 0 --search-type 0 --threads 8 --compressed 0 -v 3 --exact-tmscore 0 
+
+Index version: fs1
+Generated by:  9.427df8a
+ScoreMatrix:  3di.out
+Index version: fs1
+Generated by:  9.427df8a
+ScoreMatrix:  3di.out
+Index version: fs1
+Generated by:  9.427df8a
+ScoreMatrix:  3di.out
+[=================================================================] 85.16K 34m 29s 18ms
+Time for merging to foldseek_Viro3D_vs_NomburgDB.tsv: 0h 0m 4s 702ms
+Time for processing: 0h 34m 34s 273ms
+rmdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/result -v 3 
+
+Time for processing: 0h 0m 0s 604ms
+rmdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query -v 3 
+
+Time for processing: 0h 0m 0s 11ms
+rmdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query_h -v 3 
+
+Time for processing: 0h 0m 0s 2ms
+rmdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query_ca -v 3 
+
+Time for processing: 0h 0m 0s 49ms
+rmdb ./ulad_analysis/viro3d_vs_bfvdb_vs_nomburgdb/tmp/17598825239447266498/query_ss -v 3 
+
+Time for processing: 0h 0m 0s 9ms
