@@ -1,0 +1,18 @@
+# virosphere-fold-v1-fulldata.csv
+
+- `header`: a unique identifier for each peptide sequence consisting of its `protein_id` / `mat_pept_id` / `reg_id` and the virus's unique Sort number separated by an underscore ('_'), e.g. `AAAAAA.1_1`
+- `translation`: the amino acid sequence for this peptide
+- `gene`, `product`, `note`: annotation relating to what this peptide is derived from NCBI
+- `protein_id`: the protein NCBI identifier, including its version (separated by '.'), e.g. `AAAAAA.1`
+- `mat_pept_id`: this is the protein NCBI ID of the entry that this mature peptide was derived from followed by a '.' and a number unique to this mature peptide in the protein entry, e.g. `AAAAAA.1.1`
+- `reg_id`: this is the protein NCBI ID of the entry that this region was derived from followed by a '.1.' and a number unique to this region in the protein entry, e.g. `AAAAAA.1.1.1`
+- `uniq_id`: the `protein_id` / `mat_pept_id` / `reg_id` depending on what peptide category the entry falls under
+- `pept_cat`: the peptide category, i.e. protein, mature peptide, or region
+- `nt_acc`: the nucleotide (genome or segment) NCBI ID that the peptide was derived from (including its version), e.g. `AAAAAA.1`
+- `acc`: the nucleotide (genome or segment) NCBI ID that the peptide was derived from (without its version), e.g. `AAAAAA`
+- `protlen`: the protein length
+- `seg`: the segment annotation if the protein was derived from a segmented virus
+- `Sort`: the ICTV metadata unique number for each virus entry
+- `host`: the host annotation if that was available in the NCBI genome entry
+- `coordinates`: the coordinates NCBI annotation mapping to the: i) genome/segment if the entry is a protein, ii) protein if the entry is a mature peptide or region
+- all other columns are derived from the [ICTV virus metadata resource](msl38v2/VMR_MSL38_v2.xlsx) and should be self-explanatory
