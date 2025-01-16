@@ -1,0 +1,15 @@
+22/09/2024 11:39:55:428 Welcome to InterProScan-5.69-101.0
+22/09/2024 11:39:55:430 Running InterProScan v5 in STANDALONE mode... on Linux
+22/09/2024 11:40:00:585 RunID: alpha2.cvr.gla.ac.uk_20240922_114000414_70ha
+22/09/2024 11:40:15:501 Loading file /home4/virosphere3D/interproscan5_analysis/predicted_proteins.fasta
+22/09/2024 11:40:15:502 Running the following analyses:
+[AntiFam-7.0,CDD-3.20,Coils-2.2.1,FunFam-4.3.0,Gene3D-4.3.0,Hamap-2023_05,MobiDBLite-2.0,NCBIfam-15.0,PANTHER-18.0,Pfam-37.0,PIRSF-3.10,PIRSR-2023_05,PRINTS-42.0,ProSitePatterns-2023_05,ProSiteProfiles-2023_05,SFLD-4,SMART-9.0,SUPERFAMILY-1.75]
+Available matches will be retrieved from the pre-calculated match lookup service.
+
+Matches for any sequences that are not represented in the lookup service will be calculated locally.
+22/09/2024 11:40:43:880 Uploaded 77737 unique sequences for analysis
+22/09/2024 11:53:31:452 87% completed
+22/09/2024 12:53:31:565 25% completed
+22/09/2024 13:53:31:756 99% completed
+22/09/2024 13:57:35:070 100% done:  InterProScan analyses completed 
+
