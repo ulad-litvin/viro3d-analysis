@@ -1,0 +1,75 @@
+probe,tool,hhblits_iteration,hits
+RdRp,Pfam,1,2798
+RdRp,Pfam,2,2798
+RdRp,Pfam,3,2798
+RdRp,Pfam,4,2798
+RdRp,Pfam,5,2798
+RdRp,HHblits,1,1387
+RdRp,HHblits,2,1581
+RdRp,HHblits,3,1572
+RdRp,HHblits,4,1568
+RdRp,HHblits,5,1567
+RdRp,Foldseek,1,1449
+RdRp,Foldseek Network,1,2605
+RdRp,Foldseek Network,2,2605
+RdRp,Foldseek Network,3,2605
+RdRp,Foldseek Network,4,2605
+RdRp,Foldseek Network,5,2605
+RT,Pfam,1,116
+RT,Pfam,2,116
+RT,Pfam,3,116
+RT,Pfam,4,116
+RT,Pfam,5,116
+RT,HHblits,1,121
+RT,HHblits,2,121
+RT,HHblits,3,121
+RT,HHblits,4,122
+RT,HHblits,5,123
+RT,Foldseek,1,118
+RT,Foldseek Network,1,122
+RT,Foldseek Network,2,122
+RT,Foldseek Network,3,122
+RT,Foldseek Network,4,122
+RT,Foldseek Network,5,122
+PolB,Pfam,1,557
+PolB,Pfam,2,557
+PolB,Pfam,3,557
+PolB,Pfam,4,557
+PolB,Pfam,5,557
+PolB,HHblits,1,227
+PolB,HHblits,2,581
+PolB,HHblits,3,601
+PolB,HHblits,4,595
+PolB,HHblits,5,590
+PolB,Foldseek,1,542
+PolB,Foldseek Network,1,658
+PolB,Foldseek Network,2,658
+PolB,Foldseek Network,3,658
+PolB,Foldseek Network,4,658
+PolB,Foldseek Network,5,658
+SJR,HHblits,1,1952
+SJR,Foldseek,1,1932
+SJR,Foldseek Network,1,2359
+DJR,HHblits,1,218
+DJR,Foldseek,1,204
+DJR,Foldseek Network,1,313
+HK97,HHblits,1,107
+HK97,Foldseek,1,118
+HK97,Foldseek Network,1,119
+Class I FG,HHblits,1,116
+Class I FG,HHblits,2,259
+Class I FG,HHblits,3,260
+Class I FG,HHblits,4,266
+Class I FG,HHblits,5,270
+Class I FG,Foldseek,1,234
+Class I FG,Foldseek Network,1,251
+Class I FG,Foldseek Network,2,251
+Class I FG,Foldseek Network,3,251
+Class I FG,Foldseek Network,4,251
+Class I FG,Foldseek Network,5,251
+Class II FG,HHblits,1,252
+Class II FG,Foldseek,1,596
+Class II FG,Foldseek Network,1,672
+Class III FG,HHblits,1,196
+Class III FG,Foldseek,1,274
+Class III FG,Foldseek Network,1,513
